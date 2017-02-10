@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/com_size_0100dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_size_0140dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/music_gray">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/com_size_0020dp"
+            android:layout_marginLeft="@dimen/com_size_0030dp"
+            android:layout_marginRight="@dimen/com_size_0030dp"
+            android:layout_marginTop="@dimen/com_size_0020dp"
+            android:background="@drawable/background_edittext">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:layout_toStartOf="@+id/imageView"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="搜索我最喜欢的歌曲" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/com_size_0020dp"
+                android:src="@mipmap/img_musiccircle_search_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_size_0160dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/com_size_0120dp"
+            android:layout_height="@dimen/com_size_0120dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/com_size_0020dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/com_size_0080dp"
+            android:layout_alignTop="@+id/imageView5"
+            android:layout_marginLeft="@dimen/com_size_0020dp"
+            android:layout_toEndOf="@+id/imageView5"
+            android:gravity="center_vertical"
+            android:text="Wang丶Jing"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/com_size_0040dp"
+            android:layout_alignBottom="@+id/imageView5"
+            android:layout_marginLeft="@dimen/com_size_0020dp"
+            android:layout_toEndOf="@+id/imageView5"
+            android:text="今日听歌56分钟"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_size_0020dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout3"
+        android:background="@color/music_gray" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_size_0220dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/com_size_0220dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/com_size_0100dp"
+                android:layout_height="@dimen/com_size_0100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@mipmap/mymusic_icon_allsongs_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="本地歌曲"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="127"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/com_size_0220dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/com_size_0100dp"
+                android:layout_height="@dimen/com_size_0100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@mipmap/mymusic_icon_history_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="最近播放"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="127"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_size_0220dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/com_size_0220dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/com_size_0100dp"
+                android:layout_height="@dimen/com_size_0100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@mipmap/mymusic_icon_favorite_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="我喜欢"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="127"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/com_size_0220dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/com_size_0100dp"
+                android:layout_height="@dimen/com_size_0100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:src="@mipmap/mymusic_icon_download_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="下载歌曲"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="127"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/music_botton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_size_0120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="@dimen/com_size_0090dp"
+            android:layout_height="@dimen/com_size_0090dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/com_size_0020dp"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <com.wj.myview.MarqueeTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/com_size_0010dp"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="未知"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp" />
+
+                <com.wj.myview.MarqueeTextView
+                    android:id="@+id/art"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/com_size_0010dp"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="未知"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/com_text_24sp" />
+            </LinearLayout>
+
+            <com.github.rahatarmanahmed.cpv.CircularProgressView
+                android:layout_weight="0"
+                android:id="@+id/CircularProgressView"
+                android:layout_width="@dimen/com_size_0070dp"
+                android:layout_height="@dimen/com_size_0070dp"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:src="@mipmap/music_list" />
+
+            <ImageView
+                android:layout_marginRight="@dimen/com_size_0010dp"
+                android:id="@+id/music_list"
+                android:layout_width="@dimen/com_size_0090dp"
+                android:layout_weight="0"
+                android:layout_height="@dimen/com_size_0090dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:clickable="true"
+                android:src="@mipmap/music_list" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/touxiang"
+        android:layout_width="@dimen/com_size_0080dp"
+        android:layout_height="@dimen/com_size_0080dp"
+        android:layout_marginTop="@dimen/com_size_0020dp"
+        android:layout_marginLeft="@dimen/com_size_0020dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/com_size_0010dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Author"
+        android:id="@+id/author"
+        android:layout_alignTop="@+id/touxiang"
+        android:layout_toRightOf="@+id/touxiang"
+        android:layout_toEndOf="@+id/touxiang" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Past"
+        android:id="@+id/past"
+        android:layout_alignBottom="@+id/touxiang"
+        android:layout_toRightOf="@+id/touxiang"
+        android:layout_toEndOf="@+id/touxiang" />
+
+    <TextView
+        android:layout_marginTop="@dimen/com_size_0020dp"
+        android:layout_marginLeft="@dimen/com_size_0020dp"
+        android:layout_marginRight="@dimen/com_size_0020dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title Title Title Title Title Title Title Title "
+        android:id="@+id/title"
+        android:layout_below="@+id/touxiang"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content "
+        android:id="@+id/content"
+        android:layout_below="@+id/title"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title" />
+
+    <ImageView
+        android:layout_marginTop="@dimen/com_size_0010dp"
+        android:layout_width="@dimen/com_size_0040dp"
+        android:layout_height="@dimen/com_size_0040dp"
+        android:id="@+id/zan"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/content"
+        android:layout_alignLeft="@+id/content"
+        android:layout_alignStart="@+id/content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/com_size_0040dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="55"
+        android:layout_marginLeft="@dimen/com_size_0010dp"
+        android:id="@+id/zanshu"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/zan"
+        android:layout_toRightOf="@+id/zan"
+        android:layout_toEndOf="@+id/zan" />
+
+    <ImageView
+        android:layout_marginLeft="@dimen/com_size_0020dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="@dimen/com_size_0040dp"
+        android:layout_height="@dimen/com_size_0040dp"
+        android:id="@+id/pin"
+        android:layout_alignTop="@+id/zanshu"
+        android:layout_toRightOf="@+id/zanshu"
+        android:layout_toEndOf="@+id/zanshu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/com_size_0040dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="55"
+        android:layout_marginLeft="@dimen/com_size_0010dp"
+        android:id="@+id/pinshu"
+        android:gravity="center_vertical"
+        android:layout_alignTop="@+id/pin"
+        android:layout_toRightOf="@+id/pin"
+        android:layout_toEndOf="@+id/pin" />
+
+
+</RelativeLayout>

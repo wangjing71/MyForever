@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/popup_window"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:clickable="true"
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/com_size_0010dp"
+            android:text="你的手机已经被锁定。哈哈哈"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/com_text_40sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/com_size_0050dp"
+            android:paddingLeft="@dimen/com_size_0050dp"
+            android:paddingRight="@dimen/com_size_0050dp"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

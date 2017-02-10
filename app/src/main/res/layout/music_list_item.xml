@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="@dimen/com_size_0160dp">
+
+    <TextView
+        android:layout_weight="1"
+        android:textColor="@color/music_list"
+        android:textSize="@dimen/com_text_36sp"
+        android:gravity="center"
+        android:layout_width="@dimen/com_size_0040dp"
+        android:layout_height="@dimen/com_size_0100dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="16"
+        android:id="@+id/count"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <com.wj.myview.MarqueeTextView
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="@dimen/com_text_36sp"
+            android:textColor="@color/music_list"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="亲爱的，那不是爱情"
+            android:id="@+id/music_title" />
+
+        <TextView
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="@dimen/com_text_30sp"
+            android:textColor="@color/music_list"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="张韶涵"
+            android:id="@+id/music_singer" />
+    </LinearLayout>
+
+    <ImageView
+        android:clickable="true"
+        android:layout_weight="1"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/delete"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/com_size_0050dp"
+        android:id="@+id/delete"
+        android:layout_gravity="center_vertical"
+        />
+
+
+</LinearLayout>

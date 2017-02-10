@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/tabcolor"></View>
+
+    <RelativeLayout
+        android:id="@+id/toptab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_size_0080dp"
+        android:background="@color/tabcolor">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="My Dearest"
+            android:textColor="#fff"
+            android:textSize="@dimen/com_text_36sp" />
+
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/com_size_0010dp"
+            android:background="@null"
+            android:clickable="true"
+            android:paddingLeft="@dimen/com_size_0006dp"
+            android:src="@mipmap/img_menu" />
+
+    </RelativeLayout>
+
+    <com.wj.myview.NoScrollViewPager
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+
+        android:id="@+id/bottontable"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/com_size_0120dp"
+        android:background="@color/tabcolor"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/text_bottom"
+                android:text="首页"
+                android:textColor="#ff0000" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                style="@style/imageview_bottom"
+                android:layout_above="@+id/textView1"
+                android:src="@mipmap/home_press" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/text_bottom"
+                android:text="社区"
+                android:layout_alignStart="@+id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/imageview_bottom"
+                android:layout_above="@+id/textView2"
+                android:src="@mipmap/bbs" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/text_bottom"
+                android:text="音乐" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                style="@style/imageview_bottom"
+                android:layout_above="@+id/textView3"
+                android:src="@mipmap/music" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/text_bottom"
+                android:text="个人" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/imageview_bottom"
+                android:layout_above="@+id/textView4"
+                android:src="@mipmap/per" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

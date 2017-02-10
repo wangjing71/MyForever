@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/tabcolor"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/com_size_0080dp"
+            android:layout_below="@+id/status_bar"
+            android:background="@color/tabcolor">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="用户登录"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/com_text_40sp" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="@dimen/com_size_0100dp"
+                android:layout_height="@dimen/com_size_0060dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/com_size_0010dp"
+                android:background="@drawable/back" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.wj.myview.MyScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionbar"
+        android:background="@color/baground_gray"
+        android:fadeScrollbars="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/titleimage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/com_size_0300dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/com_size_0100dp"
+                android:layout_below="@+id/titleimage"
+                android:layout_marginLeft="@dimen/com_size_0040dp"
+                android:layout_marginRight="@dimen/com_size_0040dp"
+                android:layout_marginTop="@dimen/com_size_0020dp"
+                android:background="@drawable/background_edittext_count"
+                android:gravity="center"
+                android:hint="请输入账号"
+                android:lines="1" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/com_size_0100dp"
+                android:layout_below="@+id/username"
+                android:layout_marginLeft="@dimen/com_size_0040dp"
+                android:layout_marginRight="@dimen/com_size_0040dp"
+                android:layout_marginTop="@dimen/com_size_0020dp"
+                android:background="@drawable/background_edittext_count"
+                android:gravity="center"
+                android:hint="请输入密码"
+                android:imeActionLabel="登录"
+                android:imeOptions="actionGo"
+                android:imeActionId="1024"
+                android:inputType="text"
+                android:lines="1" />
+
+            <LinearLayout
+                android:id="@+id/rember"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/com_size_0060dp"
+                android:layout_below="@+id/password"
+                android:layout_marginLeft="@dimen/com_size_0040dp"
+                android:layout_marginRight="@dimen/com_size_0040dp"
+                android:layout_marginTop="@dimen/com_size_0020dp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/remembercount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="记住密码"
+                    android:textColor="@color/black" />
+
+                <CheckBox
+                    android:id="@+id/automaticlogon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="自动登录"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/log_in"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/com_size_0100dp"
+                android:layout_below="@+id/rember"
+                android:layout_marginLeft="@dimen/com_size_0040dp"
+                android:layout_marginRight="@dimen/com_size_0040dp"
+                android:layout_marginTop="@dimen/com_size_0020dp"
+                android:background="@drawable/background_edittext_button"
+                android:text="立即登录"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/com_size_0100dp"
+                android:layout_below="@+id/log_in"
+                android:layout_marginLeft="@dimen/com_size_0040dp"
+                android:layout_marginRight="@dimen/com_size_0040dp"
+                android:layout_marginTop="@dimen/com_size_0020dp"
+                android:background="@drawable/background_edittext_button"
+                android:text="注册账号"
+                android:textColor="@color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sign_up"
+                android:layout_marginLeft="@dimen/com_size_0040dp"
+                android:layout_marginRight="@dimen/com_size_0040dp"
+                android:layout_marginTop="@dimen/com_size_0020dp"
+                android:orientation="horizontal"></LinearLayout>
+        </RelativeLayout>
+    </com.wj.myview.MyScrollView>
+
+
+</RelativeLayout>
