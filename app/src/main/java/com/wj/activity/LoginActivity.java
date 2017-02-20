@@ -130,6 +130,7 @@ public class LoginActivity extends Activity {
             }
         });
 
+        //test
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
