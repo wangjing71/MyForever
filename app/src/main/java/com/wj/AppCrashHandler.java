@@ -19,7 +19,7 @@ public class AppCrashHandler implements UncaughtExceptionHandler {
 		defaultCrashHandler = Thread.getDefaultUncaughtExceptionHandler();
 		this.context = context;
 	}
-	
+	//test
 	@Override
 	public void uncaughtException(Thread thread, Throwable ex) {
 		Log.i(TAG, "App crashed by uncaughtException", ex);
