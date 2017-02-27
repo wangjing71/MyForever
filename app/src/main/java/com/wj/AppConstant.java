@@ -10,7 +10,7 @@ public class AppConstant {
 
 
     public static class PlayerMsg {
-        //test WO shi NI BA AAAAAAAAAA CCCCCCCCCCC DDDDDDDDDDDD EEEEEEEEEEEE FFFFFFFFFFFF
+        //BBBBBBBBBBBBBBBBBBBBBBBBBBBBB
         public static final int PLAY_MSG = 111;
         public static final int PAUSE_MSG = 222;
         public static final int STOP_MSG = 333;
