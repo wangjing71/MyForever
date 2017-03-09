@@ -13,8 +13,12 @@ public class AppConstant {
         //JJJJJJJJJJJJJJJ
         public static final int PLAY_MSG = 110;
         public static final int PAUSE_MSG = 222;
+        //333333333333333
+        //22222222222222222222
+        public static final int PLAY_MSG = 123123124;
+        public static final int PAUSE_MSG = 23424;
         public static final int STOP_MSG = 333;
-        public static final int CONTINUE_MSG = 444;
+        public static final int CONTINUE_MSG = 234234;
         public static final int PRIVIOUS_MSG = 555;
         public static final int NEXT_MSG = 666;
         public static final int PROGRESS_CHANGE = 777;
