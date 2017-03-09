@@ -7,6 +7,7 @@ public class AppConstant {
 
     //服务器IP地址
     public static String HostIp = "http://119.29.35.65:8080/MyForeverServer/";
+    //test
 
 
     public static class PlayerMsg {
