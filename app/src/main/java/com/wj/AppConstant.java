@@ -5,7 +5,7 @@ package com.wj;
  */
 public class AppConstant {
 
-    //服务器IP地址
+    //服务器IP地址 111111111111
     public static String HostIp = "http://119.29.35.65:8080/MyForeverServer/";
     //qqqqqqqqqqqqq wwwwwwwwwwwwww JJJJJJJJJJJJ ggggggg kkkkkkkkkkkkkkkkkkk
 
