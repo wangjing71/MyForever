@@ -42,7 +42,7 @@ public class MyApplication extends Application {
     }
 
     private void JPushInit() {
-
+//test
     }
 
     private void AppCrashHandlerInit() {
