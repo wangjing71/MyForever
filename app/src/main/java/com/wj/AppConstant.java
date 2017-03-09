@@ -9,6 +9,7 @@ public class AppConstant {
     public static String HostIp = "http://119.29.35.65:8080/MyForeverServer/";
     //qqqqqqqqqqqqq jjjjjjjjjjjjjj
     //qqqqqqqqqqqqq wwwwwwwwwwww
+    //11111
 
 
     public static class PlayerMsg {
