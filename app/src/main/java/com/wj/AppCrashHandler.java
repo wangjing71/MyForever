@@ -23,7 +23,7 @@ public class AppCrashHandler implements UncaughtExceptionHandler {
 	@Override
 	public void uncaughtException(Thread thread, Throwable ex) {
 		Log.i(TAG, "App crashed by uncaughtException", ex);
-		//发生未知错误 重启APP
+		//发生未知错误 重启APP wwwwwwwwwwwwwwwwwwww
 		restartApp(context);
 	}
 
