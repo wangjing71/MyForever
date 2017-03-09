@@ -10,9 +10,6 @@ public class AppConstant {
 
 
     public static class PlayerMsg {
-        //JJJJJJJJJJJJJJJ
-        public static final int PLAY_MSG = 110;
-        public static final int PAUSE_MSG = 222;
         //333333333333333
         //22222222222222222222
         public static final int PLAY_MSG = 123123124;
