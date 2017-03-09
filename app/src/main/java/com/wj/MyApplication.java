@@ -22,6 +22,7 @@ import com.wj.utils.CommonUtils;
  * Created by 汪京 on 2016/7/8.
  */
 public class MyApplication extends Application {
+    //test
 
     @Override
     public void onCreate() {
@@ -42,7 +43,7 @@ public class MyApplication extends Application {
     }
 
     private void JPushInit() {
-
+//test
     }
 
     private void AppCrashHandlerInit() {
