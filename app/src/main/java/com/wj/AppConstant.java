@@ -9,7 +9,7 @@ public class AppConstant {
     public static String HostIp = "http://119.29.35.65:8080/MyForeverServer/";
 
     public static class PlayerMsg {
-        public static final int PLAY_MSG = 999999999;
+        public static final int PLAY_MSG = 111;
         public static final int PAUSE_MSG = 23424;
         public static final int STOP_MSG = 333;
         public static final int CONTINUE_MSG = 234234;
