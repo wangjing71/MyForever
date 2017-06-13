@@ -126,16 +126,6 @@ public class HomePageFragment extends Fragment {
             View childtabView = inflater.inflate(R.layout.table_item, null);
             tabview.add(childtabView);
         }
-        // 初始化引导页的小圆点
-        for (int i = 0; i < images.size(); i++) {
-            View point = new View(getContext());
-            point.setBackgroundResource(R.drawable.shape_point_default);
-            LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(30, 30);
-            if (i > 0) {
-                parms.leftMargin = 15;
-            }
-            point.setLayoutParams(parms);
-        }
 
         for (int i = 0; i < images.size(); i++) {
             View point = new View(getContext());

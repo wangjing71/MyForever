@@ -31,7 +31,6 @@ import android.widget.Toast;
 
 import com.example.administrator.myforever.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-import com.tencent.bugly.crashreport.CrashReport;
 import com.wj.fragment.BBSFragment;
 import com.wj.fragment.HomePageFragment;
 import com.wj.fragment.MusicFragment;
@@ -108,7 +107,7 @@ public class MainActivity extends FragmentActivity {
         initData();
         initLeftMenu();
         initEvents();
-        CrashReport.testJavaCrash();
+//        CrashReport.testJavaCrash();
         viewPager.setCurrentItem(1);
     }
 
